@@ -1,0 +1,145 @@
+:root{
+    --color-blanco: #fbf9f9;
+    --color-rojo: #f60808;
+    --color-negro: #0b0a0a;
+    --color-celeste: #71c7fb;
+    --color-amarillo: #fdf203;
+}
+@font-face {
+    font-family: 'snoopy';
+    src: url('../assets/font/snoopy_reg-webfont.otf');
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('../assets/font/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'party';
+    src: url('../assets/font/Ready\ to\ Party.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+
+    background: linear-gradient(to right, rgb(251, 249, 249), rgb(113, 199, 251));
+    display: flex;
+        flex-direction: column;
+}
+header{
+    background-color: var(--color-negro);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    
+}
+h1{
+    color: var(--color-blanco);
+    font-family: 'snoopy';
+    font-size: 55px;
+    text-align: center;
+    padding-bottom: 20px;
+    animation: bounceIn;
+    animation-duration: 2s;
+}
+nav{
+    height: 30px;
+}
+nav ul{
+    background-color: var(--color-celeste);
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    list-style: none;
+    padding: 14px 16px;
+    transition: transform 0.3s ease;
+}
+
+nav ul li:hover{
+    transform: scale(1.15);
+}
+nav ul li a{
+    text-decoration: none; 
+    padding: 14px 16px;
+    color: var(--color-negro);
+    font-family: 'roboto';
+    transition: transform 0.3s ease;
+    &:hover{
+        background-color: var(--color-negro);
+        color: var(--color-blanco);
+        
+    }
+}
+.active{
+    background-color: var(--color-rojo);
+    color: var(--color-blanco)
+}
+
+h2{
+    margin: 20px 0;
+    font-family:'party';
+    font-size: 34px;
+    
+}
+hr{
+    margin-bottom: 20px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.container .parrafo {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: 'roboto';
+}
+
+.image {
+    float: right;
+    margin: 0 0 20px 20px;
+    max-width: 25%;
+    height: auto;
+    animation: fadeIn;
+    animation-duration: 5s;
+}
+
+.image2 {
+    float: left;
+    margin: 0 20px 20px 0;
+    max-width: 25%;
+    height: auto;
+    animation: fadeIn;
+    animation-duration: 5s;
+}
+
+.article {
+    float: left;
+    width: 70%;
+    background-color: #FFF;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #CCC;
+}
+
+.footer {
+    background-color: var(--color-negro);
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+  
+    bottom: 0;
+    width: 100%;
+}
+
+
+.footer p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: 'roboto';
+}

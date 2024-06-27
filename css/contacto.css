@@ -1,0 +1,81 @@
+:root {
+    --color-blanco: #fbf9f9;
+    --color-rojo: #f60808;
+    --color-negro: #0b0a0a;
+    --color-celeste: #71c7fb;
+    --color-amarillo: #fdf203;
+}
+main{
+    height: 100vh;
+}
+footer {
+    position: sticky;
+    bottom: auto;
+}
+h1{
+    animation: bounceIn;
+        animation-duration: 2s;
+}
+input[type=text],
+input[type=email],
+textarea,
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid var(--color-negro);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: var(--color-amarillo);
+    color: var(--color-negro);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "party";
+    font-size: 20px;
+}
+
+input[type=submit]:hover {
+    background-color: var(--color-celeste);
+    color: var(--color-blanco);
+
+}
+
+.contenedor-formulario {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 0 auto;
+    width: 800px;
+    display: flex;
+    
+}
+
+
+.contenedor-formulario form{
+    font-family: 'roboto';
+}
+
+.active {
+    background-color: #04AA6D;
+}
+.contenedor{
+    background-color: #999;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 20px;
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+
+.material-icons{
+    color: var(--color-negro)
+}

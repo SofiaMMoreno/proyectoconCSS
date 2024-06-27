@@ -1,0 +1,71 @@
+:root {
+    --color-blanco: #fbf9f9;
+    --color-rojo: #f60808;
+    --color-negro: #0b0a0a;
+    --color-celeste: #71c7fb;
+    --color-amarillo: #fdf203;
+}
+main{
+    height: 100vh;
+}
+h1{
+    animation: bounceIn;
+        animation-duration: 2s;
+}
+p{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: 'roboto';
+}
+nav ul li a {
+    color: var(--color-blanco);
+    &:hover{
+        background-color: var(--color-negro);
+        color: var(--color-blanco);
+    }
+}
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    
+    
+}
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 20px;
+    background-color: rgb(162, 162, 162);
+    background-color: #f60808;
+    color: var(--color-blanco);
+    font-family: 'party';
+    &:hover {
+            background-color: var(--color-amarillo);
+            color: var(--color-negro);
+        }
+}
+
+td {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 20px;
+    color: var(--color-negro);
+    font-family: 'party';
+    
+}
+.roboto{
+    font-family: 'roboto';
+}
+
+
+.tabla{
+    width: 100vw;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.active {
+    background-color:var(--color-amarillo);
+    color: var(--color-negro);
+}
